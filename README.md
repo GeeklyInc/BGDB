@@ -1,0 +1,2 @@
+# BGDB
+Boardgame Database
