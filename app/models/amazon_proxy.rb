@@ -16,6 +16,10 @@ class AmazonProxy
     # formated_price = '$' + price.to_s
   end
 
+  def self.get_link(asin)
+    item = fetch(asin)
+    link = item.get('DetailPageURL')
+  end
 
   def self.import_boardgame(asin)
     item = fetch(asin)

@@ -17,7 +17,7 @@
       <td><%= boardgame.title %></td>
       <td><%= boardgame.description ? boardgame.description[0..140] + '...' : '' %></td>
       <th><%= boardgame.review_score %></th>
-      <th><%= boardgame.current_price %></th>
+      <th><%= link_to(boardgame.current_price, boardgame.amazon_link) %></th>
       <th><%= boardgame.lowest_price_formatted %></th>
       <td><%= link_to 'Show', boardgame_path(boardgame) %></td>
       <td><%= link_to 'Edit', edit_boardgame_path(boardgame) %></td>
