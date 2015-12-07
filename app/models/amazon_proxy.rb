@@ -7,11 +7,6 @@ class AmazonProxy
     options[:associate_tag]     = 'vgsa-20'
   end
 
-  def self.import_book(asin)
-    item = fetch(asin)
-    # save_book asin, item
-  end
-
   def self.import_boardgame(asin)
     item = fetch(asin)
     save_boardgame asin, item
