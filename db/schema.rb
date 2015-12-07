@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151207060946) do
+ActiveRecord::Schema.define(version: 20151207192903) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,12 +20,16 @@ ActiveRecord::Schema.define(version: 20151207060946) do
     t.string   "title"
     t.string   "string"
     t.text     "description"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "asin"
     t.date     "published_at"
     t.string   "author"
     t.string   "amazon_image_url"
+    t.string   "amazon_link"
+    t.integer  "lowest_price"
+    t.string   "small_image"
+    t.string   "lowest_price_formatted"
   end
 
   create_table "reviews", force: :cascade do |t|
