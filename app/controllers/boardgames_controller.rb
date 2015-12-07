@@ -35,10 +35,11 @@ class BoardgamesController < ApplicationController
     # end
 
     @boardgame = AmazonProxy.import_boardgame(params[:boardgame][:asin])
-
-    if @boardgame.save
+    
+    if @boardgame
       redirect_to @boardgame
     else
+      @boardgame = Boardgame.new
       render 'new'
     end
   end

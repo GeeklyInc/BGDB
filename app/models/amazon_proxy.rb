@@ -27,7 +27,9 @@ class AmazonProxy
   end
 
   def self.save_boardgame(asin,item)
-    return if Boardgame.exists?(asin: asin)
+    if Boardgame.exists?(asin: asin)
+      return Boardgame.find_by(asin: asin)
+    end
 
     options                          = {}
     image_url                        = item.get_hash('MediumImage')['URL']
