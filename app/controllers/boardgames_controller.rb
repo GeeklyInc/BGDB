@@ -26,8 +26,16 @@ class BoardgamesController < ApplicationController
   end
 
   def create
-    @boardgame = Boardgame.new(boardgame_params)
+    # @boardgame = Boardgame.new(boardgame_params)
  
+    # if @boardgame.save
+    #   redirect_to @boardgame
+    # else
+    #   render 'new'
+    # end
+
+    @boardgame = AmazonProxy.import_boardgame(params[:boardgame][:asin])
+
     if @boardgame.save
       redirect_to @boardgame
     else
