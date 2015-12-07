@@ -5,12 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= render 'layouts/geekly_scripts' %>
+  <%= render 'shared/geekly_scripts' %>
 </head>
 <body class='home blog'>
 <div id="wrapper" class='hfeed'>
-  <%= render 'layouts/geekly_header' %>
-  <%= yield %>
+  <%= render 'shared/geekly_header' %>
+  <div id="main" class="group">
+    <section id="content-container">
+      <div id="content" role="main">
+        <div style='text-align:center'>
+          <h1>Boardgames</h1>
+        </div>
+        <%= yield %>
+      </div>
+    </section>
+  </div>
 </div>
 </body>
 </html>

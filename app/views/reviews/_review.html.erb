@@ -1,0 +1,18 @@
+<p>
+  <strong>Reviewer:</strong>
+  <%= review.reviewer %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= review.body %>
+</p>
+<p>
+  <strong>Score:</strong>
+  <%= review.score %>
+</p>
+<p>
+  <%= link_to 'Destroy Review', [review.boardgame, review],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

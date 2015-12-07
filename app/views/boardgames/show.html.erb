@@ -1,13 +1,25 @@
-<p>
-  <strong>Title:</strong>
-  <%= @boardgame.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @boardgame.description %>
-</p>
-<p>
-  <%= link_to 'Edit', edit_boardgame_path(@boardgame) %> |
-  <%= link_to 'Back', boardgames_path %>
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <p>
+        <h2><%= @boardgame.title %></h2>
+      </p>
+       
+      <p>
+        <strong>Text:</strong>
+        <%= @boardgame.description %>
+      </p>
+      <p>
+        <%= link_to 'Edit', edit_boardgame_path(@boardgame) %> |
+        <%= link_to 'Back', boardgames_path %>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Comments</h2>
+      <%= render @boardgame.reviews %>
+    </div>
+  </div>
+  <%= render 'reviews/form' %>
+</div>
