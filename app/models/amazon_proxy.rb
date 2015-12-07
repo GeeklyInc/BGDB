@@ -7,6 +7,11 @@ class AmazonProxy
     options[:associate_tag]     = 'vgsa-20'
   end
 
+  def self.get_formatted_price(asin)
+    item = fetch(asin)
+    item.get('ItemAttributes/ListPrice/FormattedPrice')
+  end
+
   def self.import_boardgame(asin)
     item = fetch(asin)
     save_boardgame asin, item

@@ -6,6 +6,7 @@
     <th>Title</th>
     <th>Description</th>
     <th>Score</th>
+    <th>Price</th>
     <th colspan='3'></th>
   </tr>
  
@@ -15,6 +16,7 @@
       <td><%= boardgame.title %></td>
       <td><%= boardgame.description ? boardgame.description[0..140] + '...' : '' %></td>
       <th><%= boardgame.review_score %></th>
+      <th><%= boardgame.current_price %></th>
       <td><%= link_to 'Show', boardgame_path(boardgame) %></td>
       <td><%= link_to 'Edit', edit_boardgame_path(boardgame) %></td>
       <td><td><%= link_to 'Delete', boardgame_path(boardgame),
