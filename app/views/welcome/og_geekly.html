@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+
+<!-- Check device width for responsive media queries -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title></title>
+
+<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/style.css" />
+
+
+<link rel="pingback" href="http://geeklyinc.com/xmlrpc.php" />
+
+<!--[if lt IE 9]>
+<script src="http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ 
+
+<script type="text/javascript">
+
+  $(document).ready(function()
+  {
+    $('.sub_menu').hide();
+    $('#menu_mobile_main').hide();
+    $('#mobile_podcast').hide();
+    
+    $( "li#podcast_btn" ).mouseover(function() {
+      $( ".sub_menu" ).show("fast");
+    })
+    
+    var $mobile_toggle = true;
+    $( "#menu_mobile_img" ).click(function() {
+      if($mobile_toggle === true)
+      {
+        $( "#menu_mobile_main" ).show("fast");
+        $mobile_toggle = false;
+      }
+      else
+      {
+        $( "#menu_mobile_main" ).hide("fast");
+        $('#mobile_podcast').hide("fast");
+        $mobile_toggle = true;
+      }
+    })
+    
+    $( "#mobile_podcast_link" ).click(function() {
+      $( "#mobile_podcast" ).show("fast");
+    })
+    
+    $("body").click(function() {
+      $( ".sub_menu" ).hide("fast");
+      
+    })
+    
+    
+  });
+  
+  
+  
+  $('#button').on('click', function() {
+      ga('send', 'event', 'button', 'click', 'nav-buttons');
+    });
+  </script>
+  
+    <script type="text/javascript">
+  
+  
+  
+
+</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Geekly Inc &raquo; Feed" href="http://geeklyinc.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Geekly Inc &raquo; Comments Feed" href="http://geeklyinc.com/comments/feed/" />
+    <script type="text/javascript">
+      window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/geeklyinc.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+      !function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='flexslider-style-css'  href='http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/CSS/flexslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://geeklyinc.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='//geeklyinc.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='//geeklyinc.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='//geeklyinc.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://geeklyinc.com/wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://geeklyinc.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://geeklyinc.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+<meta name="generator" content="WooCommerce 2.4.10" />
+<link rel='shortlink' href='http://wp.me/3O0XE' />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320'); return false;}
+//-->
+</script>
+
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style>  <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link type="text/css" rel="stylesheet" href="http://geeklyinc.com/wp-content/plugins/magic-the-gathering-card-tooltips/resources/css/wp_deckbox_mtg.css" media="screen" />
+        <script> 
+          jQuery(document).ready(function() { 
+             jQuery('ul.sf-menu').superfish();
+             jQuery('.sf-menu ul').superfish();
+         }); 
+      </script>
+                <script type="text/javascript">
+          jQuery(document).ready(function() {
+            jQuery('.video').fitVids();
+          });
+        </script> 
+    <style>
+      #site-header,
+      .index-meta li a:hover,
+      .index-meta li.theComments a:hover,
+      .more-link a:hover,
+      .footer-tags li a:hover {
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+
+<body class="home blog">
+
+
+<div id="wrapper" class="hfeed">
+
+  
+  <header id="site-header" class="group" role="banner">
+
+    
+
+    <div id="header_margin">    <div class="header-container group">
+      
+      <hgroup id="header-title">
+        <a href="http://www.geeklyinc.com"><img src="/images/logo_small.png" alt="GeeklyInc" id="logo" /></a>
+      </hgroup>
+      
+      
+          <nav id="access" class="group" role="navigation">
+            <h1 class="assistive-text section-heading">Main menu</h1>
+            <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+            <div class="menu-global-container">
+                        <div id="menu-global-sub">
+                        <ul id="menu-global" class="sf-menu">
+                        
+                        <li class="main_nav_item" id="podcast_btn"><a href="/category/podcast/"><img src="/images/mic.png" alt="Podcasts"><br>Podcasts</a></li>
+                        
+                        <li class="main_nav_item"><a href="/category/video-games/"><img src="/images/games.png" alt="Video Games"><br>Video<br />Games</a></li>
+                        <li class="main_nav_item"><a href="/category/tabletop/"><img src="/images/dice.png" alt="Table Top"><br>Tabletop</a></li>
+                        <li class="main_nav_item"><a href="/category/tv-and-movies/"><img src="/images/tv.png" alt="TV and Movies"><br>TV and<br />Movies</a></li>
+                        <li class="main_nav_item"><a href="/category/reading/"><img src="/images/reading.png" alt="Reading">Reading</a></li>
+                        <li class="main_nav_item"><a href="/wiki"><img src="/images/internet.png" alt="Wiki"><br>Wiki</a></li>
+                        <li class="main_nav_item"><a href="/forums"><img src="/images/forums.png" alt="Forums"><br>Forums</a></li>
+                        <li class="main_nav_item"><a href="/shop"><img src="/images/store.png" alt="Store"><br>Shop</a></li>
+
+                        
+                        
+                        
+                        <li><aside id="header-search" class="group">
+      <form method="get" id="searchform" action="http://geeklyinc.com/">
+        <div>
+          <input type="text" size="put_a_size_here" name="s" id="s" value="Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+          <input type="image" src="http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/images/header-search.png" id="searchsubmit" />
+        </div>
+      </form>
+            
+    </aside></li>
+                        </ul><div style="clear: both;"></div></div>
+                        
+                        <div class="sub_menu">
+                        <img src="/images/uparrow.png" class="uparrow" />
+                        
+                          <ul>
+                              <li><a href="/category/cast-of-thrones/"><img src="http://geeklyinc.com/nav_cot.png"><br />Cast of Thrones</a></li>
+                                <li><a href="/category/caf-podcast/"><img src="http://geeklyinc.com/nav_caf.png"><br />Cthulhu & Friends</a></li>
+                                <li><a href="/category/drunks-and-dragons/"><img src="http://geeklyinc.com/nav_dnd.png"><br />Drunks and Dragons</a></li>
+                                <li><a href="/category/random-encounters/"><img src="http://geeklyinc.com/nav_re.png"><br />Random Encounters</a></li>
+                                <li><a href="/category/sayer/"><img src="http://geeklyinc.com/nav_sayer.png"><br />SAYER</a></li>
+                                <li><a href="/category/top-5-of-death/"><img src="http://geeklyinc.com/images/top5.png"><br />Top 5 of Death</a></li>
+                                
+                                
+                            </ul>
+                            <div style="clear: both;"></div>
+                        </div>
+                        
+                        
+                        </div>   
+                        
+                        
+  
+                    
+               
+               
+               
+               <div id="menu_mobile">
+  <ul>
+    <li><img src="/images/drop_menu.png" alt="Navigation" id="menu_mobile_img">
+    
+    <aside id="header-search" class="group">
+      <form method="get" id="searchform" action="http://geeklyinc.com/">
+        <div>
+          <input type="text" size="put_a_size_here" name="s" id="s" value="Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+          <input type="image" src="http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/images/header-search.png" id="searchsubmit" />
+        </div>
+      </form>
+            
+    </aside>
+    
+    </li>
+  </ul>
+ 
+  
+  
+  <div id="menu_mobile_main">
+    <ul id="menu_mobile_main_ul">
+              
+                        <li id="mobile_podcast_link"><img src="/images/mic_sm.png" alt="Podcasts" class="menu_mobile_main_img">Podcasts <img src="/images/rightarrow.png" alt="Podcasts" class="podcast_arrow"></li>
+                        
+                        <li><a href="/category/video-games/"><img src="/images/games_sm.png" alt="Video Games" class="menu_mobile_main_img">Video Games</a></li>
+                        <li><a href="/category/tabletop/"><img src="/images/dice_sm.png" alt="Table Top" class="menu_mobile_main_img">Tabletop</a></li>
+                        <li><a href="/category/tv-and-movies/"><img src="/images/tv_sm.png" alt="TV and Movies" class="menu_mobile_main_img">TV and Movies</a></li>
+                        <li><a href="/category/reading/"><img src="/images/reading_sm.png" alt="Reading" class="menu_mobile_main_img">Reading</a></li>
+                        <li><a href="/wiki"><img src="/images/internet_sm.png" alt="Wiki" class="menu_mobile_main_img">Wiki</a></li>
+                        <li><a href="/forums"><img src="/images/forums_sm.png" alt="Forums" class="menu_mobile_main_img">Forums</a></li>
+                        <li><a href="/shop"><img src="/images/store_sm.png" alt="Store" class="menu_mobile_main_img">Shop</a></li>
+                    </ul>
+               </li>
+               </ul></div>
+               
+               <ul id="mobile_podcast">
+                    <li><a href="/category/cast-of-thrones/">Cast of Thrones</a></li>
+                    <li><a href="/category/caf-podcast/">Cthulhu & Friends</a></li>
+                    <li><a href="/category/drunks-and-dragons/">Drunks and Dragons</a></li>
+                    <li><a href="/category/random-encounters/">Random Encounters</a></li>
+                    <li><a href="/category/sayer/">SAYER</a></li>
+                    <li><a href="/category/top-5-of-death/">Top 5 of Death</a></li>
+                                
+                                
+                    
+                </ul>
+  
+</div>
+ 
+                                               
+          </nav><!-- #access -->
+              
+    </div><!-- .header-container -->
+    </div><!-- #header_margin or #header_image_margin -->
+
+    
+    
+
+      
+  </header><!-- #site-header -->
+
+  
+
+  <div id="main" class="group">
+<section id="content-container">
+    <div id="content" role="main">
+    
+    <div class='row'>
+        <div class='col-xs-12 col-sm-6 col-md-7 col-lg-8'>
+      
+              <section id="regular-index" class="group">
+        <div id="regular-content">
+  
+                                
+                  <div class='hero-image'><a href='http://geeklyinc.com/a-feast-for-crows-a-dance-with-dragons-book-club-episode-13/'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/geeklyinc.com/wp-content/uploads/2014/10/feast.jpg?resize=1281%2C884" class="attachment-full wp-post-image" alt="feast" /><noscript><img src="http://i2.wp.com/geeklyinc.com/wp-content/uploads/2014/10/feast.jpg?resize=1281%2C884" class="attachment-full wp-post-image" alt="feast" /></noscript></a></div><div class='hero_inner'><h1 class='hero-title'><a href='http://geeklyinc.com/a-feast-for-crows-a-dance-with-dragons-book-club-episode-13/'>A Feast for Crows / A Dance with Dragons Book Club Episode 13</a></h1><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/nick/" title="Posts by Nick Bristow" rel="author">Nick Bristow</a> ON December 6th, 2015</div><div class='hero-text'><p>You didn&#8217;t think we&#8217;d leave you hanging just because it&#8217;s the holidays did ya? Of course not, here&#8217;s a steamin hot fresh episode from our critically acclaimed book club! We got some hot takes in this week, including a special look inside the head of Melisandre! What!? Yep, we get to hear all about the &hellip;</p>
+</div>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/a-feast-for-crows-a-dance-with-dragons-book-club-episode-13/#respond">Leave a comment</a>                 </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/cast-of-thrones/" rel="category tag">Cast of Thrones</a></li>
+  <li><a href="http://geeklyinc.com/category/podcast/" rel="category tag">podcast</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/34296-2/'>The Message: Radio Drama for the Podcast Age</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/geeklyinc.com/wp-content/uploads/2015/12/the-message.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="the message" /><noscript><img src="http://i1.wp.com/geeklyinc.com/wp-content/uploads/2015/12/the-message.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="the message" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/steph/" title="Posts by Steph Kingston" rel="author">Steph Kingston</a> ON December 4th, 2015</div><div class='index-content'><p>Everybody loves a good mystery.  When Serial exploded into the public consciousness this time last year it did more than spark an interest in the intriguing murder case of Hae Min Lee.  Serial gave birth to a new wave of podcasts that tell mysterious stories over a number of episodes, often in the style of &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/34296-2/' title='Permalink to The Message: Radio Drama for the Podcast Age' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/34296-2/#comments">1 Comment</a>                  </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/internet/" rel="category tag">Internet</a></li>
+  <li><a href="http://geeklyinc.com/category/podcast/" rel="category tag">podcast</a></li>
+  <li><a href="http://geeklyinc.com/category/reviews/" rel="category tag">Reviews</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/game-of-thrones-first-season-6-trailer-released/'>Game of Thrones: First Season 6 Teaser Trailer Released</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/12/Capture.png?fit=300%2C300" class="attachment-medium wp-post-image" alt="Capture" /><noscript><img src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/12/Capture.png?fit=300%2C300" class="attachment-medium wp-post-image" alt="Capture" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/bijaya/" title="Posts by Bijaya Shrestha" rel="author">Bijaya Shrestha</a> ON December 3rd, 2015</div><div class='index-content'><p>HBO has released the first teaser trailer for the 6th Season of Game of Thrones. The clip shows flashbacks from the past seasons, including Jon, Arya, Sansa, Robb, and Ned. The voiceovers (including Bran) say the following: Three Eyed Raven (?): &#8220;We watch, we listen, and we remember. The past is already written. The ink &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/game-of-thrones-first-season-6-trailer-released/' title='Permalink to Game of Thrones: First Season 6 Teaser Trailer Released' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/game-of-thrones-first-season-6-trailer-released/#respond">Leave a comment</a>                 </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/tv-and-movies/" rel="category tag">TV and Movies</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/weekly-tv-recap-week-of-november-22/'>Weekly TV Recap: Week of November 22</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/09/18k1mw5lvpz5jjpg.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="18k1mw5lvpz5jjpg" /><noscript><img src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/09/18k1mw5lvpz5jjpg.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="18k1mw5lvpz5jjpg" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/caleb/" title="Posts by Caleb Gillombardo" rel="author">Caleb Gillombardo</a> ON December 3rd, 2015</div><div class='index-content'><p>With the holiday and the fall break, there wasn&#8217;t much new this week. But the episodes that did play were the extremes of good and bad. Next week should be much better. &nbsp; Blindspot &#8211; Evil Handmade Instrument Now that, ladies and gentlemen, is how you deliver a fall finale. Whew, that was an intense &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/weekly-tv-recap-week-of-november-22/' title='Permalink to Weekly TV Recap: Week of November 22' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/weekly-tv-recap-week-of-november-22/#respond">Leave a comment</a>                 </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/tv-and-movies/" rel="category tag">TV and Movies</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/master-of-none-a-letter-from-an-immigrant/'>Master of None: A Letter from an Immigrant</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/geeklyinc.com/wp-content/uploads/2015/12/Master_of_None_TV_Series-785196149-large.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="Master_of_None_TV_Series-785196149-large" /><noscript><img src="http://i2.wp.com/geeklyinc.com/wp-content/uploads/2015/12/Master_of_None_TV_Series-785196149-large.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="Master_of_None_TV_Series-785196149-large" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/bijaya/" title="Posts by Bijaya Shrestha" rel="author">Bijaya Shrestha</a> ON December 3rd, 2015</div><div class='index-content'><p>Dear Aziz and Alan: I can call you Aziz and Alan, right? I thought about addressing this letter to &#8220;Messrs. Ansari &amp; Yang&#8221; but it just did not seem right. So, Aziz and Alan, I watched your new show, Master of None, and thoroughly enjoyed it. The comedy and drama were well balanced and the &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/master-of-none-a-letter-from-an-immigrant/' title='Permalink to Master of None: A Letter from an Immigrant' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/master-of-none-a-letter-from-an-immigrant/#comments">16 Comments</a>                  </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/editorial/" rel="category tag">Editorial</a></li>
+  <li><a href="http://geeklyinc.com/category/tv-and-movies/" rel="category tag">TV and Movies</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/weekly-tv-recap-week-of-november-15/'>Weekly TV Recap: Week of November 15</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/09/18k1mw5lvpz5jjpg.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="18k1mw5lvpz5jjpg" /><noscript><img src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/09/18k1mw5lvpz5jjpg.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="18k1mw5lvpz5jjpg" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/caleb/" title="Posts by Caleb Gillombardo" rel="author">Caleb Gillombardo</a> ON December 2nd, 2015</div><div class='index-content'><p>The holiday break for most series is right around the corner, so it&#8217;s time for fall finales in most of these shows over the next week or two. Should be good, right?  Editor&#8217;s note: Sorry about the delay; Thanksgiving has messed me up. &nbsp; iZombie &#8211; Abra Cadaver This was a good episode and it &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/weekly-tv-recap-week-of-november-15/' title='Permalink to Weekly TV Recap: Week of November 15' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/weekly-tv-recap-week-of-november-15/#comments">1 Comment</a>                  </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/tv-and-movies/" rel="category tag">TV and Movies</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/on-not-watching-jessica-jones/'>On Not Watching Jessica Jones</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/11/jessica-jones-netflix-poster-e1448890140900.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="jessica-jones-netflix-poster" /><noscript><img src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/11/jessica-jones-netflix-poster-e1448890140900.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="jessica-jones-netflix-poster" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/christina/" title="Posts by Christina Ladd" rel="author">Christina Ladd</a> ON December 1st, 2015</div><div class='index-content'><p>In all contexts of my life, whether professional or personal or the strange amalgam that is Geekly, I am fortunate enough to be surrounded by giant nerds. These big old dorkazoids inspire and sustain me in so many ways, and in the spirit of Thanksgiving, I want to preface this by highlighting my gratitude to &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/on-not-watching-jessica-jones/' title='Permalink to On Not Watching Jessica Jones' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/on-not-watching-jessica-jones/#comments">2 Comments</a>                 </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/editorial/" rel="category tag">Editorial</a></li>
+  <li><a href="http://geeklyinc.com/category/new-releases/" rel="category tag">New Releases</a></li>
+  <li><a href="http://geeklyinc.com/category/tv-and-movies/" rel="category tag">TV and Movies</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/a-very-geekly-holiday-gift-exchange/'>A Very Geekly Holiday Gift Exchange!</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/11/188340.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="188340" /><noscript><img src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/11/188340.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="188340" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/nika/" title="Posts by Nika Howard" rel="author">Nika Howard</a> ON November 30th, 2015</div><div class='index-content'><p>Dire Donkey rides? Old Wizard fingers in your mouth? Whatever your favorite things might be, we have a new tradition just in time for the Holiday/Winter Solstice season &#8211; A Very Geekly Holiday Gift Exchange! It is the time of the year for giving and general merriment and nothing says that more than a fun &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/a-very-geekly-holiday-gift-exchange/' title='Permalink to A Very Geekly Holiday Gift Exchange!' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/a-very-geekly-holiday-gift-exchange/#respond">Leave a comment</a>                 </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/cast-of-thrones/" rel="category tag">Cast of Thrones</a></li>
+  <li><a href="http://geeklyinc.com/category/drunks-and-dragons/" rel="category tag">Drunks and Dragons</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/supernatural-then-now-plush-11-07/'>Supernatural: Then &amp; Now – Plush (11.07)</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/geeklyinc.com/wp-content/uploads/2015/11/trio_1024.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="trio_1024" /><noscript><img src="http://i1.wp.com/geeklyinc.com/wp-content/uploads/2015/11/trio_1024.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="trio_1024" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/jkchaisson/" title="Posts by Jackie Chaisson" rel="author">Jackie Chaisson</a> ON November 30th, 2015</div><div class='index-content'><p>Plush Original Air Date: 11/18/15 We’re back to a good ol’ fashioned haunting! The episode opens with the restrained hostility of a loveless marriage, which ends in murder by a masked assailant. However, this isn’t a ski-masked individual looking to rob the couple after a little violence. Oh no, it’s a filthy bunny head who &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/supernatural-then-now-plush-11-07/' title='Permalink to Supernatural: Then &amp; Now – Plush (11.07)' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/supernatural-then-now-plush-11-07/#comments">1 Comment</a>                  </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/tv-and-movies/" rel="category tag">TV and Movies</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                        
+                  <div class='subbox'><div class='row'><div class='col-lg-12'><h1 class='index-subtitle'><a href='http://geeklyinc.com/drunks-and-dragons-episode-147-battle-of-bahamut/'>Drunks and Dragons Episode 147 &#8211; Battle of Bahamut</a></h1></div></div><div class='row'><div class='col-lg-4'><img src="http://geeklyinc.com/wp-content/plugins/speed-booster-pack/inc/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/11/dnd_cover4.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="dnd_cover" /><noscript><img src="http://i0.wp.com/geeklyinc.com/wp-content/uploads/2015/11/dnd_cover4.jpg?fit=300%2C300" class="attachment-medium wp-post-image" alt="dnd_cover" /></noscript></div><div class='col-lg-8'><div class='index-name-date-hero'> BY <a href="http://geeklyinc.com/author/tim/" title="Posts by Tim Lanning" rel="author">Tim Lanning</a> ON November 30th, 2015</div><div class='index-content'><p>Having wrapped up the battle with the leader of the army of Bahamut your brave adventurers, who are filled with much satisfaction of an encounter well struck, moves on to meet with our Elven friends. They seem nice and &#8230; wait&#8230; what is that sound? Oh crap. Bahamutians seem to be gathering to attack in force. &hellip;</p>
+</div><!-- .entry-content -->
+            <div class='more-link'>
+              <a href='http://geeklyinc.com/drunks-and-dragons-episode-147-battle-of-bahamut/' title='Permalink to Drunks and Dragons Episode 147 &#8211; Battle of Bahamut' rel='bookmark'>
+                Read More
+              </a>
+            </div></div></div><div class='row'><div class='col-lg-12'>
+            <aside class="index-meta group">
+              <ul>
+
+
+                  <li class="theComments">
+                    <a href="http://geeklyinc.com/drunks-and-dragons-episode-147-battle-of-bahamut/#respond">Leave a comment</a>                  </li><!-- .theComments -->
+                
+                <ul class="post-categories">
+  <li><a href="http://geeklyinc.com/category/drunks-and-dragons/" rel="category tag">Drunks and Dragons</a></li>
+  <li><a href="http://geeklyinc.com/category/tabletop/dungeons-dragons/" rel="category tag">Dungeons &amp; Dragons</a></li>
+  <li><a href="http://geeklyinc.com/category/podcast/" rel="category tag">podcast</a></li>
+  <li><a href="http://geeklyinc.com/category/tabletop/" rel="category tag">tabletop</a></li></ul>             </ul>   
+              
+            </aside><!-- .index-meta --></div></div></div>
+                       
+        
+        </div><!-- #regular-content -->
+        <div class="paginationBox group"> 
+          <ul class="pagination"><li class="current">1</li><li><a href="http://geeklyinc.com/page/2/" class="inactive" >2</a></li><li><a href="http://geeklyinc.com/page/3/" class="inactive" >3</a></li><li><a href="http://geeklyinc.com/page/4/" class="inactive" >4</a></li><a href="http://geeklyinc.com/page/2/" >Next &raquo;</a><li></li><li><a href="http://geeklyinc.com/page/162/">&raquo;</a></li></ul>       </div>
+        </section><!-- #regular-index -->
+                  
+            </div><!-- col-lg-8 -->
+      
+            <div class='col-xs-12 col-sm-6 col-md-5 col-lg-4'>
+            
+           <a href="http://geeklycon.com"><img src="/images/cg16.png" alt="Buy GeeklyCon Tickets" style="width:100%;" /></a>
+            
+                  <h1 class="index-title" style="margin-top:-5px; padding-top:15px;">Featured Podcasts</h1>
+                    
+                    <div class="featured-block">
+                      <a href="http://geeklyinc.com/category/drunks-and-dragons/"><img src="/images/dnd_logo.png" alt="Drunks and Dragons" /></a>
+                    <p><em>Drunks and Dragons</em> is a Real-Play Dungeons and Dragons podcast. Join our heroes as they explore <em>Drunkeros</em> and attempt to save it from the foul clutches of Orcus.</p>
+                        
+                        <p><a href="http://www.patreon.com/dndpodcast">Patreon</a> - <a href="http://geeklyinc.com/wiki/index.php?title=Main_Page#Drunks_and_Dragons">Wiki</a> - <a href="http://geeklyinc.com/drunkards-and-dragons-episode-1/">1st Episode</a> - <a href="mailto:info@dndpodcast.com">Contact</a> - <a href="http://geeklyinc.com/drunks-and-dragons-cast/">Cast</a></p>
+                        
+                       <a href="https://www.facebook.com/pages/Drunks-and-Dragons-Podcast/544785025552465"><img src="http://thriftynerd.com/images/fb.png" /></a> &nbsp; <a href="http://www.twitter.com/dndpodcast"><img src="http://thriftynerd.com/images/twitter.png" /></a> &nbsp; <a href="http://feeds.feedburner.com/dndpodcast"><img src="http://thriftynerd.com/images/rss.png" /></a>
+                        
+                        <div class="episode">
+                        <p><strong>Latest Episode:</strong></p>
+                        
+                        
+                        
+                              
+                    <strong><a href='http://geeklyinc.com/a-very-geekly-holiday-gift-exchange/'>A Very Geekly Holiday Gift Exchange!</a></strong>                                            
+                        
+                        
+                    </div>  <!-- .episode --> 
+                </div><!-- .featured-block -->
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="featured-block">
+                    
+                    <a href="http://geeklyinc.com/category/cast-of-thrones/"><img src="/images/cot_hp.jpg" alt="Cast of Thrones" /></a>
+                    <p><em>Cast of Thrones</em> are your best friends who decided to get together with a handful of beers and discuss your favorite fantasy series, Game of Thrones. Join us every week during the season for a spoiler-free discussion of the HBO Series. The off-season is full of book clubs and other nonsense to keep you entertained.</p>
+                        
+                        <p><a href="http://geeklyinc.com/donate/">Donate</a> - <a href="mailto:castofthrones@gmail.com">Contact</a> - <a href="http://geeklyinc.com/about/">Cast</a></p>
+                        
+                       <a href="https://www.facebook.com/CastOfThrones"><img src="http://thriftynerd.com/images/fb.png" /></a> &nbsp; <a href="http://www.twitter.com/castofthrones"><img src="http://thriftynerd.com/images/twitter.png" /></a> &nbsp; <a href="http://feeds.feedburner.com/CastOfThronesTheGameOfThronesPodcast"><img src="http://thriftynerd.com/images/rss.png" /></a>
+                        
+                        <div class="episode">
+                        <p><strong>Latest Episode:</strong></p>
+                        
+                        
+                        
+                              
+                    <strong><a href='http://geeklyinc.com/a-feast-for-crows-a-dance-with-dragons-book-club-episode-13/'>A Feast for Crows / A Dance with Dragons Book Club Episode 13</a></strong>                                        </div>  <!-- .episode --> 
+                </div><!-- .featured-block -->
+                
+                
+                  <div class="featured-block">
+                    
+                    <a href="http://geeklyinc.com/category/caf-podcast/"><img src="/images/caf_logo.jpg" alt="Cthulhu & Friends" /></a>
+                    <p><em>Cthulhu & Friends</em> is a Real-Play podcast of the Call of Cthulhu roleplaying game using a modified version of the D20 system. High production value and superior storytelling will keep you sleepless for many nights to come!</p>
+                        
+                        <p><a href="http://www.patreon.com/cafpodcast">Patreon</a> - <a href="http://geeklyinc.com/wiki/index.php?title=Cthulhu_and_Friends_Episodes">Wiki</a> - <a href="http://geeklyinc.com/episode1/">1st Episode</a> - <a href="mailto:info@cafpodcast.com">Contact</a><!-- - <a href="">Cast</a>--></p>
+                        
+                       <!--<a href="https://www.facebook.com/CastOfThrones"><img src="http://thriftynerd.com/images/fb.png" /></a> &nbsp; --><a href="http://www.twitter.com/cafpodcast"><img src="http://thriftynerd.com/images/twitter.png" /></a> &nbsp; <a href="http://feeds.feedburner.com/CaFPodcastt"><img src="http://thriftynerd.com/images/rss.png" /></a>
+                        
+                        <div class="episode">
+                        <p><strong>Latest Episode:</strong></p>
+                        
+                        
+                        
+                              
+                    <strong><a href='http://geeklyinc.com/cafturkeyday2015/'>Happy Creepsgiving from Cthulhu &#038; Friends!</a></strong>                     
+                    </div>  <!-- .episode --> 
+                </div><!-- .featured-block -->
+                
+                
+                <div class="featured-block">
+                    
+                    <a href="http://geeklyinc.com/category/sayer/"><img src="/images/sayer_logo.jpg" alt="SAYER" /></a>
+                    <p><em>SAYER</em> is a narrative fiction podcast starring a highly advanced, self-aware AI. Step into the shoes of an employee of Ærolith Dynamics on Earth's second moon, Typhon.</p>
+                        
+                        <p><a href="http://www.patreon.com/sayer">Patreon</a> - <a href="http://geeklyinc.com/wiki/index.php?title=SAYER_Episodes">Wiki</a> - <a href="http://geeklyinc.com/sayer-episode-1-while-you-are-still-paralyzed/">1st Episode</a> - <a href="mailto:sayer@geeklyinc.com">Contact</a><!--  - <a href="">Cast</a>--></p>
+                        
+                       <!--<a href="https://www.facebook.com/pages/Drunks-and-Dragons-Podcast/544785025552465"><img src="http://thriftynerd.com/images/fb.png" /></a> &nbsp; --><a href="http://www.twitter.com/iamsayer"><img src="http://thriftynerd.com/images/twitter.png" /></a> &nbsp; <a href="http://feeds.feedburner.com/sayer"><img src="http://thriftynerd.com/images/rss.png" /></a>
+                        
+                        <div class="episode">
+                        <p><strong>Latest Episode:</strong></p>
+                        
+                        
+                        
+                              
+                    <strong><a href='http://geeklyinc.com/sayer-episode-43-this-fear/'>SAYER &#8211; Episode 43 &#8211; This Fear</a></strong>                      
+                    </div>  <!-- .episode --> 
+                </div><!-- .featured-block -->
+                
+                <div class="featured-block">
+                    
+                   <a href="http://geeklyinc.com/category/top-5-of-death/"><img src="/images/top5_logo.jpg" alt="SAYER" /></a>
+                    <p><em>Top 5 of Death</em> is a weekly round table discussion. Wanna know the Top 5 of any topic? Wanna kill some podcast hosts? Listen and DIE!</p>
+                        
+                        <p><a href="https://www.facebook.com/Top5ofDeath">Donate</a> - <a href="http://geeklyinc.com/wiki/index.php?title=Top_5_of_Death_Episodes">Wiki</a> - <a href="mailto:sayer@geeklyinc.com">Contact</a><!--  - <a href="">Cast</a>--></p>
+                        
+                       <a href="https://www.facebook.com/Top5ofDeath"><img src="http://thriftynerd.com/images/fb.png" /></a> &nbsp; <a href="http://www.twitter.com/top5ofdeath"><img src="http://thriftynerd.com/images/twitter.png" /></a> &nbsp; <a href="http://top5ofdeath.podomatic.com/rss2.xml"><img src="http://thriftynerd.com/images/rss.png" /></a>
+                        
+                        <div class="episode">
+                        <p><strong>Latest Episode:</strong></p>
+                        
+                        
+                        
+                              
+                    <strong><a href='http://geeklyinc.com/top-5-of-death-ep-101-live-episode-pickup-lines/'>Top 5 of Death &#8211; EP 101 Live Episode Pickup Lines</a></strong>                      
+                    </div>  <!-- .episode --> 
+                </div><!-- .featured-block -->
+                    
+                    <h1 class="index-title">More Podcasts</h1>
+                    
+                   <a href="http://geeklyinc.com/category/random-encounters/"><img src="/images/dndre_logo.jpg" alt="DnD Random Encounters" /></a>
+                   <br /><br /><br />
+                   <a href="http://geeklyinc.com/product/geeklycon-2016-ticket/"><img src="/images/gcad.jpg" alt="Buy GeeklyCon Tickets" style="width:100%;" /></a>
+                    
+                    
+            </div><!-- col-lg-4 -->
+            
+      
+        
+      
+    </section><!-- #content-container -->
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+    
+            </div>
+            
+           
+            
+      
+
+
+
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+
+    
+
+    <div id="footer-content">
+      <div id="site-generator">
+        
+        <p>
+        &copy; 2015 Geekly Inc. - <a href="/contact/">Contact Us</a>
+        </p>
+        <p><a href="#content">You have reached the bottom. Click here to get back on top.</a></p>
+      </div>
+    </div>
+  </footer><!-- #colophon -->
+</div><!-- #container -->
+
+  <div style="display:none">
+  </div>
+      
+      <script>
+        jQuery(document).ready(function($){
+
+          $('.flexslider').flexslider();
+        });
+      </script>
+    <link rel='stylesheet' id='mediaelement-css'  href='http://geeklyinc.com/wp-includes/js/mediaelement/mediaelementplayer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://geeklyinc.com/wp-includes/js/mediaelement/wp-mediaelement.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://deckbox.org/javascripts/tooltip.js' defer='defer'></script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' defer='defer'></script>
+<script type='text/javascript'>try{jQuery.noConflict();}catch(e){};</script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-includes/js/jquery/jquery-migrate.min.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/magic-the-gathering-card-tooltips/resources/tooltip_extension.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/js/superfish.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/js/jquery.fitvids.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/themes/geeklyinc-bootstrap/js/jquery.flexslider-min.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/jetpack/modules/photon/photon.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js' defer='defer'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/geeklyinc.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/contact-form-7/includes/js/scripts.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/fd-footnotes/fdfootnotes.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/speed-booster-pack/js/sbp-lazy-load.min.js' defer='defer'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/geeklyinc.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//geeklyinc.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js' defer='defer'></script>
+<script type='text/javascript' src='//geeklyinc.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' defer='defer'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//geeklyinc.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js' defer='defer'></script>
+<script type='text/javascript' src='//geeklyinc.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js' defer='defer'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//geeklyinc.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js' defer='defer'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js' defer='defer'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js' defer='defer'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":"0fd4114af6be6f9b83472d8a6560c538"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/jetpack/modules/wpgroho.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-content/plugins/powerpress/player.min.js' defer='defer'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js' defer='defer'></script>
+<script type='text/javascript' src='http://geeklyinc.com/wp-includes/js/mediaelement/wp-mediaelement.js' defer='defer'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201550.js' async defer></script>
+<script type='text/javascript'>
+  _stq = window._stq || [];
+  _stq.push([ 'view', {v:'ext',j:'1:3.8.0',blog:'56249106',post:'0',tz:'-5',srv:'geeklyinc.com'} ]);
+  _stq.push([ 'clickTrackerInit', '56249106', '0' ]);
+</script>
+<!-- We need this for debugging themes using Speed Booster Pack Plugin v2.6 -->
+<!-- Scripts to footer: enabled -->
+<!-- Defer parsing of js: enabled -->
+
+
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-zJEEqPbNvX84C"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-zJEEqPbNvX84C.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43691630-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+</body>
+</html>

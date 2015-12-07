@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geeklyboardgames</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/geekly_scripts' %>
+</head>
+<body class='home blog'>
+<div id="wrapper" class='hfeed'>
+  <%= render 'layouts/geekly_header' %>
+  <%= yield %>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<h1>Listing boardgames</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th colspan='3'></th>
+  </tr>
+ 
+  <% @boardgames.each do |boardgame| %>
+    <tr>
+      <td><%= boardgame.title %></td>
+      <td><%= boardgame.description %></td>
+      <td><%= link_to 'Show', boardgame_path(boardgame) %></td>
+      <td><%= link_to 'Edit', edit_boardgame_path(boardgame) %></td>
+      <td><td><%= link_to 'Delete', boardgame_path(boardgame),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td></td>
+    </tr>
+  <% end %>
+</table>
+
+<footer>
+<ul>
+  <li><%= link_to 'New boardgame', new_boardgame_path %></li>
+  <li><%= link_to 'Home', root_path %></li>
+</ul>
+</footer>
