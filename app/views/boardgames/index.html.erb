@@ -2,6 +2,7 @@
  
 <table class='table'>
   <tr>
+    <th>Box</th>
     <th>Title</th>
     <th>Description</th>
     <th>Score</th>
@@ -10,8 +11,9 @@
  
   <% @boardgames.each do |boardgame| %>
     <tr>
+      <td><%= image_tag(boardgame.amazon_image_url) %></td>
       <td><%= boardgame.title %></td>
-      <td><%= boardgame.description %></td>
+      <td><%= boardgame.description ? boardgame.description[0..140] + '...' : '' %></td>
       <th><%= boardgame.review_score %></th>
       <td><%= link_to 'Show', boardgame_path(boardgame) %></td>
       <td><%= link_to 'Edit', edit_boardgame_path(boardgame) %></td>
